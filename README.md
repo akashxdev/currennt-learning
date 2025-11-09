@@ -1,2 +1,2 @@
-# currennt-learning
-###I will add the codes on which I'm Currently learning.
+# current-learning
+### My practice codes are added here in this repo. For showcase and recalling perpouse.
