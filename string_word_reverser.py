@@ -1,10 +1,20 @@
-in_str=input()
+#reverse any input string
+in_str=input("Give input string:")
 spl=list(in_str.split(" ")) #spliting into words
-rev_lst=[] #store list items in rev
-addin_in=len(spl)
-for i in spl:
-    rev_lst.append(spl[addin_in-1])
-    addin_in -=1
 
-rev_str= " ".join(rev_lst)
-print (rev_str) #printing reversed str
+
+def reverse_str (in_lst):
+    rev_lst=[] #store list items in rev
+    
+    #method:1 slicing
+    #for i in in_lst[::-1]: #slicing directly
+    #    rev_lst.append(i)
+
+    #method:2 reversed()
+    for i in reversed(in_lst): #reversing list directly
+        rev_lst.append(i)
+        
+    rev_str= " ".join(rev_lst) #.join method for joining an itrable
+    return rev_str
+    
+print ("Reversed string:",reverse_str(spl)) #printing reversed str
